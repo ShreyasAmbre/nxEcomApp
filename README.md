@@ -1,101 +1,73 @@
-# AngularNxEcomWp
+# 🅰️ Angular Nx E-commerce Project Notes
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+## 🧩 Required Setup
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
+> Ensure the following tools are installed before proceeding:
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+- **Node.js** (LTS Version)  
+- **Angular CLI** (LTS Version)  
+- **Editor:** [Visual Studio Code](https://code.visualstudio.com/)
 
-## Run tasks
+---
 
-To run the dev server for your app, use:
+## ⚙️ Nx Commands
 
-```sh
-npx nx serve angularNxEcom
-```
+| Command | Description |
+|----------|--------------|
+| `npx create-nx-workspace@latest` | Create a new Nx workspace |
+| `npx nx run angularNxEcom:serve:development` | Serve the Angular app in development mode |
+| `npx nx run angularNxEcom:lint` | Run lint checks |
+| `npm install bootstrap@5.3.3 @popperjs/core@2.11.8` | Install Bootstrap and Popper.js |
 
-To create a production bundle:
+---
 
-```sh
-npx nx build angularNxEcom
-```
+## 📘 Chapter 1 — Theory and Initial Project Setup
 
-To see all available targets to run for a project, run:
+**Versions Used**
+- Nx: `v20`
+- Node.js: `v20.11.1`
+- Bootstrap: `v5.3.3`
+- Popper.js: `v2.11.8`
 
-```sh
-npx nx show project angularNxEcom
-```
+**Steps Completed**
+- ✅ Created new workspace: **`angularNxEcom`**  
+- ✅ Updated project prefix in `project.json` and ESLint configuration  
+- ✅ Added `"buildable": true` configuration in `nx.json`  
+- ✅ Created a new **`home`** library inside the `libs/` folder  
+- ✅ Initialized a new GitHub repository and pushed all initial commits  
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+> [!NOTE]  
+> Explore the `ng-ddd-plugin` for better domain-driven design integration.  
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+---
 
-## Add new projects
+### 🧾 Commit Message Convention
 
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+Use the **"de facto industry standard"** (Conventional Commits) for clean and scalable version history.
 
-Use the plugin's generator to create new projects.
+#### 🧱 Example Table
 
-To generate a new application, use:
+| Type | Meaning | Example |
+|------|----------|----------|
+| **feat** | A new feature | `feat(profile): add profile picture upload` |
+| **fix** | A bug fix | `fix(api): handle null response gracefully` |
+| **chore** | Routine tasks or maintenance | `chore: update npm packages` |
+| **refactor** | Code improvement without functional changes | `refactor(auth): simplify login flow` |
+| **style** | Code style or formatting updates | `style: format files using prettier` |
+| **docs** | Documentation changes | `docs(readme): update setup instructions` |
 
-```sh
-npx nx g @nx/angular:app demo
-```
+---
 
-To generate a new library, use:
+## 📗 Chapter 2 — Shared Library and Reusable Components
 
-```sh
-npx nx g @nx/angular:lib mylib
-```
+**Work Completed**
+- Created a **Shared Library** (`shared/`)  
+- Developed a **`main-nav`** component within the shared library  
+- Integrated **`shared-main-nav`** component inside the **root app component**
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+---
 
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Set up CI!
-
-### Step 1
-
-To connect to Nx Cloud, run the following command:
-
-```sh
-npx nx connect
-```
-
-Connecting to Nx Cloud ensures a [fast and scalable CI](https://nx.dev/ci/intro/why-nx-cloud?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) pipeline. It includes features such as:
-
-- [Remote caching](https://nx.dev/ci/features/remote-cache?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task distribution across multiple machines](https://nx.dev/ci/features/distribute-task-execution?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Automated e2e test splitting](https://nx.dev/ci/features/split-e2e-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task flakiness detection and rerunning](https://nx.dev/ci/features/flaky-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-### Step 2
-
-Use the following command to configure a CI workflow for your workspace:
-
-```sh
-npx nx g ci-workflow
-```
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### 🧠 Next Steps
+- Implement additional reusable UI components (e.g., footer, sidebar)  
+- Configure **Transloco** for multi-language support  
+- Explore **Storybook** for component documentation
