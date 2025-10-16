@@ -2,7 +2,7 @@
   "name": "angularNxEcom",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "app",
+  "prefix": "ecom",
   "sourceRoot": "apps/angularNxEcom/src",
   "tags": [],
   "targets": {
@@ -22,8 +22,13 @@
             "input": "apps/angularNxEcom/public"
           }
         ],
-        "styles": ["apps/angularNxEcom/src/styles.scss"],
-        "scripts": []
+        "styles": [
+          "node_modules/bootstrap/dist/css/bootstrap.min.css",
+          "apps/angularNxEcom/src/styles.scss"
+        ],
+        "scripts": [
+          "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+        ]
       },
       "configurations": {
         "production": {
