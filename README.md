@@ -18,6 +18,7 @@
 | `npx nx run angularNxEcom:serve:development` | Serve the Angular app in development mode |
 | `npx nx run angularNxEcom:lint` | Run lint checks |
 | `npm install bootstrap@5.3.3 @popperjs/core@2.11.8` | Install Bootstrap and Popper.js |
+| `npm install @ngrx/store@19.0.0 @ngrx/effects@19.0.0 @ngrx/store-devtools@19.0.0` | Install NgRx Store, effects, entity & devtool |
 
 ---
 
@@ -66,8 +67,8 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 - Integrated **`shared-main-nav`** component inside the **root app component**
 
 ---
-
-### 🧠 Next Steps
-- Implement additional reusable UI components (e.g., footer, sidebar)  
-- Configure **Transloco** for multi-language support  
-- Explore **Storybook** for component documentation
+## 📗 Chapter 3 — Installation of NgRx and Creating Global core lib
+- Installation of NgRx Store, effect, entity and devto0l v18.0.2
+- Creating core library to hold global services, interceptors, and the root NgRx store.
+- Integrated ngRx store, actions, reducer and effect in app.config.ts
+- Create Actions and Reducer to update the store
