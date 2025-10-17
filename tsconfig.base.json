@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@angular-nx-ecom-wp/home": ["libs/home/src/index.ts"],
-      "@angular-nx-ecom-wp/shared/components": ["libs/shared/src/index.ts"]
+      "@angular-nx-ecom-wp/shared/components": ["libs/shared/src/index.ts"],
+      "@angular-nx-ecom-wp/state": ["libs/core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
