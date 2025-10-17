@@ -1,15 +1,24 @@
 import { createReducer, on } from '@ngrx/store';
-import { setAppLoaded } from './app.actions';
+import { categoryActionsSuccess, categoryActionsFailure } from './app.actions';
+import { initialState } from './app.state';
 
-export interface AppCoreState {
-  loaded: boolean;
-}
-
-export const initialState: AppCoreState = {
-  loaded: false,
-};
 
 export const appReducer = createReducer(
   initialState,
-  on(setAppLoaded, (state, { loaded }) => ({ ...state, loaded }))
-);
+  on(categoryActionsSuccess, (state, action) => {
+    return {
+      ...state,
+      categories: action.categories,
+      error: ''
+    }
+  }),
+  on(categoryActionsFailure, (state, action) => {
+    return {
+      ...state,
+      categories: [],
+      error: action.error
+    }
+  })
+)
+
+

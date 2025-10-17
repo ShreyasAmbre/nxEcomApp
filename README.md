@@ -70,4 +70,5 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 ## 📗 Chapter 3 — Installation of NgRx and Creating Global core lib
 - Installation of NgRx Store, effect, entity and devto0l v18.0.2
 - Creating core library to hold global services, interceptors, and the root NgRx store.
-- 
+- Integrated ngRx store, actions, reducer and effect in app.config.ts
+- Create Actions and Reducer to update the store
