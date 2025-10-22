@@ -1,10 +1,10 @@
 {
-  "name": "state",
+  "name": "core",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/core/src",
   "prefix": "core",
   "projectType": "library",
-  "tags": [],
+  "tags": ["core"],
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",

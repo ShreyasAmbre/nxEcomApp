@@ -56,6 +56,7 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 | **refactor** | Code improvement without functional changes | `refactor(auth): simplify login flow` |
 | **style** | Code style or formatting updates | `style: format files using prettier` |
 | **docs** | Documentation changes | `docs(readme): update setup instructions` |
+| **build** | Build changes | `build: configuraiton changes or packages added` |
 
 ---
 
