@@ -19,6 +19,7 @@
 | `npx nx run angularNxEcom:lint` | Run lint checks |
 | `npm install bootstrap@5.3.3 @popperjs/core@2.11.8` | Install Bootstrap and Popper.js |
 | `npm install @ngrx/store@19.0.0 @ngrx/effects@19.0.0 @ngrx/store-devtools@19.0.0` | Install NgRx Store, effects, entity & devtool |
+| `npx nx graph` | This command help to see architecture |
 
 ---
 
@@ -73,3 +74,5 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 - Creating core library to hold global services, interceptors, and the root NgRx store.
 - Integrated ngRx store, actions, reducer and effect in app.config.ts
 - Create Actions and Reducer to update the store
+- 
+

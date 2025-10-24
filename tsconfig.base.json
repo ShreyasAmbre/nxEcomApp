@@ -15,10 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-nx-ecom-wp/home": ["libs/home/src/index.ts"],
-      "@angular-nx-ecom-wp/shared": ["libs/shared/src/index.ts"],
       "@angular-nx-ecom-wp/core": ["libs/core/src/index.ts"],
+      "@angular-nx-ecom-wp/shared": ["libs/shared/src/index.ts"],
       "@angular-nx-ecom-wp/products": ["libs/products/src/index.ts"],
+      "@angular-nx-ecom-wp/home": ["libs/home/src/index.ts"],
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -6,6 +6,13 @@
   "projectType": "library",
   "tags": ["core"],
   "targets": {
+    "build": {
+    "executor": "@nx/angular:ng-packagr-lite",
+    "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+    "options": {
+      "project": "libs/core/ng-package.json"
+    }
+  },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
