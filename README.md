@@ -91,6 +91,18 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 ## 📗 Chapter 6 — Integration of NgRx for Product Feature Library
 - Created ngRx code as Actions, Effects, Reducer, Selectors and providedProductStore 
 - Registered providedProductStore in lib.routes of Product Feature Library as those store will be available only  when user navigates to products 
-  
+
+> [!NOTE]  
+> Here when registering the product store I have registered in Product Feature Library inside lib.routes instead of 
+registering in app.config.ts. Because it was giving ERROR No. 1, But as we are registering inside the Product Feature this 
+product feature store will be availabel in global state only when user has navigated to product feature. It means if we want
+to use Product dispatch or selector in home page we can do it. Product Feature State is isolated we can use any of the other feature due to this architecture. 
 
 
+
+
+## ERROR
+1. Static imports of lazy-loaded libraries are forbidden.
+Library "products" is lazy-loaded in these files:
+eslint@nx/enforce-module-boundaries
+module "c:/Shreyas/Others/Nx Learnings/angularNxEcomWp/libs/products/src/index"

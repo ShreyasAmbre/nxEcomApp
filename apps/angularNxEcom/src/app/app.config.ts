@@ -11,9 +11,9 @@ import { APP_CONFIG, } from '@angular-nx-ecom-wp/shared';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-
-    provideStore({}), // ✅ Root store
-    ...provideCoreStore, // feature slices (app)
+    provideStore({}),
+    ...provideCoreStore,
+    // ...provideProductStore,
     provideEffects([AppEffects]),
     provideStoreDevtools({ maxAge: 25, logOnly: false }),
     provideRouter(appRoutes),
@@ -23,7 +23,6 @@ export const appConfig: ApplicationConfig = {
         baseUrlInterceptor
       ])
     ),
-    ...provideCoreStore,
     { provide: APP_CONFIG, useValue: environment },
   ],
 };
