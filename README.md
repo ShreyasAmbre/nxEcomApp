@@ -74,5 +74,23 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 - Creating core library to hold global services, interceptors, and the root NgRx store.
 - Integrated ngRx store, actions, reducer and effect in app.config.ts
 - Create Actions and Reducer to update the store
-- 
+
+## 📗 Chapter 4 — Creating Architecture Foundation of Application 
+- Created constants/endpoints file inside core
+- Integration interceptor which concat baseUrl with endpoint in core
+- Created appService/serivces for global level logic
+- Created NgRx state & store for core and registered in app.config.ts
+- Added Environment folder inside angularNxEcom/src and interface of environemnt in shared/models
+- Created feature-shell library as an entry point for all the feature & added main-layout component
+
+## 📗 Chapter 5 — Integration of fakeStoreApi's
+- Added baseUrl in environment
+- created product service and integrated category API and triggered that from component
+
+
+## 📗 Chapter 6 — Integration of NgRx for Product Feature Library
+- Created ngRx code as Actions, Effects, Reducer, Selectors and providedProductStore 
+- Registered providedProductStore in lib.routes of Product Feature Library as those store will be available only  when user navigates to products 
+  
+
 
