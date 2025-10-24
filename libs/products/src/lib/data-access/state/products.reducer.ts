@@ -1,5 +1,5 @@
 import { createReducer, on } from "@ngrx/store";
-import { categoryActionsFailure, categoryActionsSuccess } from "./category.actions";
+import { categoryActionsFailure, categoryActionsSuccess } from "./products.actions";
 
 export interface CategoryState {
   categories: string[],

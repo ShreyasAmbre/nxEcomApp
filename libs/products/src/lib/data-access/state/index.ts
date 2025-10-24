@@ -1,3 +1,3 @@
-export * from './category.actions';
-export * from './category.reducer';
-export * from './category.selectors';
+export * from './products.actions';
+export * from './products.reducer';
+export * from './products.selectors';
