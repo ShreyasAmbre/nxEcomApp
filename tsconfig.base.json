@@ -19,7 +19,8 @@
       "@angular-nx-ecom-wp/feature-shell": ["libs/feature-shell/src/index.ts"],
       "@angular-nx-ecom-wp/home": ["libs/home/src/index.ts"],
       "@angular-nx-ecom-wp/products": ["libs/products/src/index.ts"],
-      "@angular-nx-ecom-wp/shared": ["libs/shared/src/index.ts"]
+      "@angular-nx-ecom-wp/shared": ["libs/shared/src/index.ts"],
+      "@angular-nx-ecom-wp/shared-store": ["libs/shared-store/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
