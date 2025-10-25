@@ -1,13 +1,14 @@
 import { createReducer, on } from "@ngrx/store";
-import { categoryActionsFailure, categoryActionsSuccess } from "./category.actions";
+import { categoryActionsFailure, categoryActionsSuccess } from "./products.actions";
 
-export interface CategoryState {
+export const PRODUCT_FEATURE_KEY = 'product';
+export interface ProductState {
   categories: string[],
   currentCategory: string,
   error: string
 }
 
-const initialCategoryState: CategoryState = {
+const initialCategoryState: ProductState = {
   categories: [],
   currentCategory: '',
   error: ''

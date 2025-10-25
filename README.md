@@ -74,5 +74,35 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 - Creating core library to hold global services, interceptors, and the root NgRx store.
 - Integrated ngRx store, actions, reducer and effect in app.config.ts
 - Create Actions and Reducer to update the store
-- 
 
+## 📗 Chapter 4 — Creating Architecture Foundation of Application 
+- Created constants/endpoints file inside core
+- Integration interceptor which concat baseUrl with endpoint in core
+- Created appService/serivces for global level logic
+- Created NgRx state & store for core and registered in app.config.ts
+- Added Environment folder inside angularNxEcom/src and interface of environemnt in shared/models
+- Created feature-shell library as an entry point for all the feature & added main-layout component
+
+## 📗 Chapter 5 — Integration of fakeStoreApi's
+- Added baseUrl in environment
+- created product service and integrated category API and triggered that from component
+
+
+## 📗 Chapter 6 — Integration of NgRx for Product Feature Library
+- Created ngRx code as Actions, Effects, Reducer, Selectors and providedProductStore 
+- Registered providedProductStore in lib.routes of Product Feature Library as those store will be available only  when user navigates to products 
+
+> [!NOTE]  
+> Here when registering the product store I have registered in Product Feature Library inside lib.routes instead of 
+registering in app.config.ts. Because it was giving ERROR No. 1, But as we are registering inside the Product Feature this 
+product feature store will be availabel in global state only when user has navigated to product feature. It means if we want
+to use Product dispatch or selector in home page we can do it. Product Feature State is isolated we can use any of the other feature due to this architecture. 
+
+
+
+
+## ERROR
+1. Static imports of lazy-loaded libraries are forbidden.
+Library "products" is lazy-loaded in these files:
+eslint@nx/enforce-module-boundaries
+module "c:/Shreyas/Others/Nx Learnings/angularNxEcomWp/libs/products/src/index"
