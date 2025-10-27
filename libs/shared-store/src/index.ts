@@ -1,1 +1,1 @@
-export * from './lib/shared-store/shared-store.component';
+export * from './lib/products';
