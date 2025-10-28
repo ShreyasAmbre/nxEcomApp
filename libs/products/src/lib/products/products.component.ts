@@ -21,9 +21,11 @@ export class ProductsComponent implements OnInit {
   // #productService = inject(ProductsService);
   #store = inject(Store);
 
+  allProducts = this.#store.select(ProductSelectors.selectAllProducts);
   allCategories = this.#store.select(ProductSelectors.selectCategories);
 
   ngOnInit(): void {
+    this.getAllProducts();
     this.getAllCategories();
   }
 
@@ -34,5 +36,9 @@ export class ProductsComponent implements OnInit {
 
     this.#store.dispatch(SharedProductActions.getCategory());
 
+  }
+
+  getAllProducts(){
+    this.#store.dispatch(SharedProductActions.getAllProducts());
   }
 }

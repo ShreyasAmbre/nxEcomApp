@@ -1,1 +1,1 @@
-export * from './lib/products';
+export * from './lib/shared-products-store';

@@ -1,11 +1,12 @@
 import { createReducer, on } from "@ngrx/store";
-import { categoryActionsFailure, categoryActionsSuccess } from "./shared-products.actions";
+import { categoryActionsFailure, categoryActionsSuccess, getAllProductsFailure, getAllProductsSuccess } from "./shared-products.actions";
 import { SharedProductState } from "../models";
 
-export const PRODUCT_FEATURE_KEY = 'product';
+export const SHARED_PRODUCT_FEATURE_KEY = 'shared-product';
 
 const initialSharedProductState: SharedProductState = {
   categories: [],
+  products: [],
   currentCategory: '',
   error: ''
 }
@@ -23,6 +24,20 @@ export const sharedProductReducer = createReducer(
     return {
       ...state,
       categories: [],
+      error: action.error
+    }
+  }),
+  on(getAllProductsSuccess, (state, action) => {
+    return {
+      ...state,
+      products: action.products,
+      error: ''
+    }
+  }),
+  on(getAllProductsFailure, (state, action) => {
+    return {
+      ...state,
+      products: [],
       error: action.error
     }
   })
