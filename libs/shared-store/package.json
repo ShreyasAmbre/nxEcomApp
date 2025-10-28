@@ -1,0 +1,13 @@
+{
+  "name": "@angular-nx-ecom-wp/shared-store",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^19.2.0",
+    "@angular/core": "^19.2.0",
+    "@angular-nx-ecom-wp/core": "0.0.1",
+    "rxjs": "~7.8.0",
+    "@ngrx/store": "^19.0.0",
+    "@ngrx/effects": "^19.0.0"
+  },
+  "sideEffects": false
+}

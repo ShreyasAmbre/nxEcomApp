@@ -8,12 +8,13 @@ import { AppEffects, appReducer, baseUrlInterceptor, provideCoreStore } from '@a
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { APP_CONFIG, } from '@angular-nx-ecom-wp/shared';
+import { provideSharedProductStore } from '@angular-nx-ecom-wp/shared-store';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideStore({}),
     ...provideCoreStore,
-    // ...provideProductStore,
+    ...provideSharedProductStore,
     provideEffects([AppEffects]),
     provideStoreDevtools({ maxAge: 25, logOnly: false }),
     provideRouter(appRoutes),
