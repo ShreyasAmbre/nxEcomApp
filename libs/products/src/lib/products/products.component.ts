@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ProductsService } from '../data-access/services/products.service';
 import { Store } from '@ngrx/store';
 
-import * as ProductActions from '../data-access/state/products.actions';
-import * as ProductSelectors from '../data-access/state/products.selectors';
+import * as SharedProductActions from '@angular-nx-ecom-wp/shared-store';
+import * as ProductSelectors from '@angular-nx-ecom-wp/shared-store';
 
 
 @Component({
@@ -30,10 +30,9 @@ export class ProductsComponent implements OnInit {
   getAllCategories(){
     // this.#productService.getCategories().subscribe(res => {
     //   console.log("RES =>", res);
-
     // })
 
-    this.#store.dispatch(ProductActions.getCategory());
+    this.#store.dispatch(SharedProductActions.getCategory());
 
   }
 }
