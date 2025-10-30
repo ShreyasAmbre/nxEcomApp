@@ -88,21 +88,7 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 - created product service and integrated category API and triggered that from component
 
 
-## 📗 Chapter 6 — Integration of NgRx for Product Feature Library
-- Created ngRx code as Actions, Effects, Reducer, Selectors and providedProductStore 
-- Registered providedProductStore in lib.routes of Product Feature Library as those store will be available only  when user navigates to products 
-
-> [!NOTE]  
-> Here when registering the product store I have registered in Product Feature Library inside lib.routes instead of 
-registering in app.config.ts. Because it was giving ERROR No. 1, But as we are registering inside the Product Feature this 
-product feature store will be availabel in global state only when user has navigated to product feature. It means if we want
-to use Product dispatch or selector in home page we can do it. Product Feature State is isolated we can use any of the other feature due to this architecture. 
-
-
-
-
-## ERROR
-1. Static imports of lazy-loaded libraries are forbidden.
-Library "products" is lazy-loaded in these files:
-eslint@nx/enforce-module-boundaries
-module "c:/Shreyas/Others/Nx Learnings/angularNxEcomWp/libs/products/src/index"
+## 📗 Chapter 6 — Integration of NgRx in feature shared-store
+- This feature will be having a store which will be shared across all the feature 
+- This store will only contain those data which is required to share other API calls and data will be isolted inside the feature only 
+- Integrated getCategories and getAllProducts API from fakestoreapi.com in our hsared-store
