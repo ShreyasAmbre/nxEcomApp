@@ -17,7 +17,7 @@
 | `npx create-nx-workspace@latest` | Create a new Nx workspace |
 | `npx nx run angularNxEcom:serve:development` | Serve the Angular app in development mode |
 | `npx nx run angularNxEcom:lint` | Run lint checks |
-| `npm install bootstrap@5.3.3 @popperjs/core@2.11.8` | Install Bootstrap and Popper.js |
+| `npm install bootstrap@5.3.3` | Install Bootstrap |
 | `npm install @ngrx/store@19.0.0 @ngrx/effects@19.0.0 @ngrx/store-devtools@19.0.0` | Install NgRx Store, effects, entity & devtool |
 | `npx nx graph` | This command help to see architecture |
 
@@ -27,9 +27,9 @@
 
 **Versions Used**
 - Nx: `v20`
+- Angular: `v19.2.0`
 - Node.js: `v20.11.1`
 - Bootstrap: `v5.3.3`
-- Popper.js: `v2.11.8`
 
 **Steps Completed**
 - ✅ Created new workspace: **`angularNxEcom`**  
