@@ -27,7 +27,8 @@
         ],
         "stylePreprocessorOptions": {
           "includePaths": [
-            "libs/shared/src/lib/styles"
+            "apps/angularNxEcom/src/styles",
+            "libs/shared/src/lib/styles/shared"
           ],
           "sass": {
             "silenceDeprecations": ["import"]

@@ -1,0 +1,24 @@
+// (Add font styles, heading sizes, etc. here)
+.fs-5x {
+  font-size: 1.375rem; // 22px
+}
+
+.fs-6x {
+  font-size: 1.125rem; // 18px
+}
+
+.fs-7 {
+  font-size: 0.875rem !important;
+}
+
+.fs-8 {
+  font-size: 0.75rem;
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.text-accent-red {
+  color: var(--accent-color-red);
+}

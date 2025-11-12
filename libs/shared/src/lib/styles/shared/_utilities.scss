@@ -1,0 +1,15 @@
+
+
+.pointer {
+  cursor: pointer;
+}
+
+.rtl-flip {
+  transform: scaleX(-1);
+}
+
+.capitalize-letter {
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}

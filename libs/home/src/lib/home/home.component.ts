@@ -3,10 +3,14 @@ import { CommonModule } from '@angular/common';
 import { Store } from '@ngrx/store';
 import * as SharedProductActions from '@angular-nx-ecom-wp/shared-store';
 import * as ProductSelectors from '@angular-nx-ecom-wp/shared-store';
+import { ProductCardComponent } from '@angular-nx-ecom-wp/shared';
 
 @Component({
   selector: 'lib-home',
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    ProductCardComponent
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

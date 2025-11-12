@@ -5,12 +5,14 @@ import { Store } from '@ngrx/store';
 
 import * as SharedProductActions from '@angular-nx-ecom-wp/shared-store';
 import * as ProductSelectors from '@angular-nx-ecom-wp/shared-store';
+import { ProductCardComponent } from '@angular-nx-ecom-wp/shared';
 
 
 @Component({
   selector: 'product-products',
   imports: [
     CommonModule,
+    ProductCardComponent
   ],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss',

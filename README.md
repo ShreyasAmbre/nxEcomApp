@@ -92,3 +92,15 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 - This feature will be having a store which will be shared across all the feature 
 - This store will only contain those data which is required to share other API calls and data will be isolted inside the feature only 
 - Integrated getCategories and getAllProducts API from fakestoreapi.com in our hsared-store
+
+## 🎨 Orange-Based Color Palette
+| Tone              | Color Name         | Hex Code  | Description / Use Suggestion                     |
+| ----------------- | ------------------ | --------- | ------------------------------------------------ |
+| **Primary**       | **Vibrant Orange** | `#FF7A00` | Main brand color — energetic, attention-grabbing |
+| **Light Variant** | **Soft Peach**     | `#FFD4A3` | Backgrounds, highlights, or hover states         |
+| **Dark Variant**  | **Deep Amber**     | `#CC5500` | Buttons, accents, or active states               |
+| **Accent 1**      | **Warm Yellow**    | `#FFC94A` | For secondary highlights or icons                |
+| **Accent 2**      | **Coral Red**      | `#FF4D2D` | To show alerts or emphasis elements              |
+| **Neutral Light** | **Cream White**    | `#FFF8F0` | Clean, warm background tone                      |
+| **Neutral Dark**  | **Charcoal Gray**  | `#2E2E2E` | Text, borders, or contrast base                  |
+
