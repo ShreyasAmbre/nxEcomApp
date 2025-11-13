@@ -15,6 +15,11 @@ export const featureShellRoutes: Route[] = [
         path: 'products',
         loadChildren: () => import('@angular-nx-ecom-wp/products').then(m => m.productsRoutes)
       },
+      {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+      }
     ]
   },
 ];

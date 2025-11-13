@@ -1,5 +1,13 @@
 # 🅰️ Angular Nx E-commerce Project Notes
 
+## Project Requirement 
+- Project should get Scalable, Maintainable, Reusable
+- Project should work on latest versions of technology
+- Project code base should follow industry standards
+
+## Project Objective 
+- To learn & enjoy developing things that makes u grow and feel pride.
+
 ## 🧩 Required Setup
 
 > Ensure the following tools are installed before proceeding:
@@ -98,4 +106,15 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 - Added base.scss, variables.scss, utitlity.scss
 - Added product-card shared component so that we can use in Home & Product feature library
 - Some configuration also changes
+
+## Step 8 - Login Feature UI & API integration and store data in gloabal store
+
+## Step 9 - Product Detail Page 
+
+## Step 10 - Cart Feature
+
+
+## Future Development 
+- Need to add resolver in home page 
+- Need tp skelton loading in all pages
 
