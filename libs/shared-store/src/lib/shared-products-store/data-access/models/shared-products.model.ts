@@ -16,4 +16,10 @@ export interface Product {
   description: string
   category: string
   image: string
+  ratings: Ratings
+}
+
+interface Ratings {
+  count: number,
+  rate: number
 }

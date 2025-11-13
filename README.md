@@ -17,7 +17,7 @@
 | `npx create-nx-workspace@latest` | Create a new Nx workspace |
 | `npx nx run angularNxEcom:serve:development` | Serve the Angular app in development mode |
 | `npx nx run angularNxEcom:lint` | Run lint checks |
-| `npm install bootstrap@5.3.3 @popperjs/core@2.11.8` | Install Bootstrap and Popper.js |
+| `npm install bootstrap@5.3.3` | Install Bootstrap |
 | `npm install @ngrx/store@19.0.0 @ngrx/effects@19.0.0 @ngrx/store-devtools@19.0.0` | Install NgRx Store, effects, entity & devtool |
 | `npx nx graph` | This command help to see architecture |
 
@@ -27,9 +27,9 @@
 
 **Versions Used**
 - Nx: `v20`
+- Angular: `v19.2.0`
 - Node.js: `v20.11.1`
 - Bootstrap: `v5.3.3`
-- Popper.js: `v2.11.8`
 
 **Steps Completed**
 - ✅ Created new workspace: **`angularNxEcom`**  
@@ -92,3 +92,15 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 - This feature will be having a store which will be shared across all the feature 
 - This store will only contain those data which is required to share other API calls and data will be isolted inside the feature only 
 - Integrated getCategories and getAllProducts API from fakestoreapi.com in our hsared-store
+
+## 🎨 Orange-Based Color Palette
+| Tone              | Color Name         | Hex Code  | Description / Use Suggestion                     |
+| ----------------- | ------------------ | --------- | ------------------------------------------------ |
+| **Primary**       | **Vibrant Orange** | `#FF7A00` | Main brand color — energetic, attention-grabbing |
+| **Light Variant** | **Soft Peach**     | `#FFD4A3` | Backgrounds, highlights, or hover states         |
+| **Dark Variant**  | **Deep Amber**     | `#CC5500` | Buttons, accents, or active states               |
+| **Accent 1**      | **Warm Yellow**    | `#FFC94A` | For secondary highlights or icons                |
+| **Accent 2**      | **Coral Red**      | `#FF4D2D` | To show alerts or emphasis elements              |
+| **Neutral Light** | **Cream White**    | `#FFF8F0` | Clean, warm background tone                      |
+| **Neutral Dark**  | **Charcoal Gray**  | `#2E2E2E` | Text, borders, or contrast base                  |
+

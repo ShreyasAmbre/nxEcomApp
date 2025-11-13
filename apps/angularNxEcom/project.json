@@ -23,9 +23,17 @@
           }
         ],
         "styles": [
-          "node_modules/bootstrap/dist/css/bootstrap.min.css",
-          "apps/angularNxEcom/src/styles.scss"
+          "apps/angularNxEcom/src/styles/styles.scss"
         ],
+        "stylePreprocessorOptions": {
+          "includePaths": [
+            "apps/angularNxEcom/src/styles",
+            "libs/shared/src/lib/styles/shared"
+          ],
+          "sass": {
+            "silenceDeprecations": ["import"]
+          }
+        },
         "scripts": [
           "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
         ]

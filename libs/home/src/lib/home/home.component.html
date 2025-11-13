@@ -1,2 +1,18 @@
-<p>Home  works!  {{ allProducts | async | json}}</p>
-<p>Home  works!  {{ allCategories | async}}</p>
+<!-- <p>Home  works!  {{ allProducts | async | json}}</p> -->
+<!-- <p>Home  works!  {{ allCategories | async}}</p> -->
+
+<div class="container">
+  <div class="row">
+    @for (product of allProducts | async; track $index) {
+    <div class="col-3">
+        <shared-product-card
+          [productTitle]="product.title"
+          [productDescription]="product.description"
+          [productImg]="product.image"
+          [productPrice]="product.price">
+        </shared-product-card>
+
+      </div>
+    }
+  </div>
+</div>

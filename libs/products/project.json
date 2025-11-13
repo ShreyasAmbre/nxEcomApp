@@ -4,7 +4,7 @@
   "sourceRoot": "libs/products/src",
   "prefix": "product",
   "projectType": "library",
-  "tags": ["product"],
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@nx/angular:ng-packagr-lite",
