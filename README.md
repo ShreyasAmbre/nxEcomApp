@@ -107,7 +107,12 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 - Added product-card shared component so that we can use in Home & Product feature library
 - Some configuration also changes
 
+## 📗 Step 8 — Category Page 
+- This should include filters and products listing based on category only 
+- Create action, effects, reducer, effects to get product based on categoryName
+
 ## Step 8 - Login Feature UI & API integration and store data in gloabal store
+- U should give a try to use withComponentInputBinding() which will help to show the user name, category name when passing data in route
 
 ## Step 9 - Product Detail Page 
 
@@ -116,5 +121,7 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 
 ## Future Development 
 - Need to add resolver in home page 
-- Need tp skelton loading in all pages
+- Need to add skelton loading in all pages
+- create artifact pipes to load the images
+
 
