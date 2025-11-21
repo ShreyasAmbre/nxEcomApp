@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@angular-nx-ecom-wp/core": ["libs/core/src/index.ts"],
+      "@angular-nx-ecom-wp/feature-auth": ["libs/feature-auth/src/index.ts"],
       "@angular-nx-ecom-wp/feature-shell": ["libs/feature-shell/src/index.ts"],
       "@angular-nx-ecom-wp/home": ["libs/home/src/index.ts"],
       "@angular-nx-ecom-wp/products": ["libs/products/src/index.ts"],
