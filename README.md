@@ -29,6 +29,10 @@
 | `npm install bootstrap@5.3.3` | Install Bootstrap |
 | `npm install @ngrx/store@19.0.0 @ngrx/effects@19.0.0 @ngrx/store-devtools@19.0.0` | Install NgRx Store, effects, entity & devtool |
 | `npx nx graph` | This command help to see architecture |
+| `npm install @fortawesome/angular-fontawesome@1.0.0` | To Install FontAwesome v1 is compatible with our project Angular core v19 |
+| `npm install @fortawesome/free-solid-svg-icons ` | To Install FontAwesome Solid |
+| `npm install @fortawesome/free-regular-svg-icons` | To Install FontAwesome Regular |
+| `npm install @fortawesome/free-brands-svg-icons ` | To Install FontAwesome Regular |
 
 ---
 
@@ -111,15 +115,18 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 - This should include filters and products listing based on category only 
 - Create action, effects, reducer, effects to get product based on categoryName
 
-## Step 8 - Login Feature UI & API integration and store data in gloabal store
+## 📗 Step 8 — Integrating FontAwesome in application
+- Commands are mentioned above
+
+## Step 9 - Login Feature UI & API integration and store data in gloabal store
 - Create a login and signup UI
 - Create Signal Form for both
 - Integrate authguard
 - U should give a try to use withComponentInputBinding() which will help to show the user name, category name when passing data in route
 
-## Step 9 - Product Detail Page 
+## Step 10 - Product Detail Page 
 
-## Step 10 - Cart Feature
+## Step 11 - Cart Feature
 
 
 ## Future Development 

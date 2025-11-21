@@ -5,45 +5,41 @@
 
     <form>
       <div class="row">
-        <!-- Full Name -->
         <div class="col-md-12 mb-3">
           <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
           <div class="input-group">
             <span class="input-group-text bg-white">
-              <i class="fa-regular fa-user"></i>
+              <fa-icon [icon]="['far', 'user']"></fa-icon>
             </span>
             <input type="text" class="form-control" placeholder="Enter full name" required>
           </div>
         </div>
 
-        <!-- Email -->
         <div class="col-md-12 mb-3">
           <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
           <div class="input-group">
             <span class="input-group-text bg-white">
-              <i class="fa-regular fa-envelope"></i>
+              <fa-icon [icon]="['far', 'user']"></fa-icon>
             </span>
             <input type="email" class="form-control" placeholder="Enter email" required>
           </div>
         </div>
 
-        <!-- Password -->
         <div class="col-md-12 mb-3">
           <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
           <div class="input-group">
             <span class="input-group-text bg-white">
-              <i class="fa-solid fa-lock"></i>
+              <fa-icon [icon]="['fas', 'key']"></fa-icon>
             </span>
             <input type="password" class="form-control" placeholder="Enter password" required>
           </div>
         </div>
 
-        <!-- Phone -->
         <div class="col-md-12 mb-3">
           <label for="phoneNo" class="form-label">Phone Number</label>
           <div class="input-group">
             <span class="input-group-text bg-white">
-              <i class="fa-solid fa-mobile-screen"></i>
+              <fa-icon [icon]="['fas', 'mobile-screen']"></fa-icon>
             </span>
             <input type="text" class="form-control" placeholder="Optional">
           </div>
