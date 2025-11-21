@@ -8,6 +8,10 @@ export const featureShellRoutes: Route[] = [
     component: MainLayoutComponent,
     children: [
       {
+        path: "auth",
+        loadChildren: () => import('@angular-nx-ecom-wp/feature-auth').then(m => m.featureAuthRoutes)
+      },
+      {
         path: 'home',
         loadChildren: () => import('@angular-nx-ecom-wp/home').then(m => m.homeRoutes)
       },
@@ -17,7 +21,7 @@ export const featureShellRoutes: Route[] = [
       },
       {
         path: '',
-        redirectTo: 'home',
+        redirectTo: 'auth',
         pathMatch: 'full'
       }
     ]

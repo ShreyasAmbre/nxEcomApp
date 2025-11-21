@@ -1,0 +1,46 @@
+.auth-container {
+  min-height: 90vh;
+  // background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+
+  .auth-card {
+    width: 100%;
+    max-width: 420px;
+    background-color: #fff;
+    border-radius: 12px;
+
+    .auth-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #343a40;
+    }
+
+    .form-control {
+      padding: 10px 14px;
+    }
+
+    .input-group-text {
+      border-right: none;
+      i {
+        font-size: 16px;
+        color: #6c757d;
+      }
+    }
+
+    .form-control {
+      border-left: none;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #0d6efd;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 576px) {
+      padding: 2rem 1.5rem !important;
+    }
+  }
+}

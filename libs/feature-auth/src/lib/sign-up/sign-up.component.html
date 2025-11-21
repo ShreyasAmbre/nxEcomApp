@@ -1,1 +1,61 @@
-<p>sign-up works!</p>
+<div class="auth-container d-flex justify-content-center align-items-center">
+  <div class="auth-card shadow-lg p-4 rounded-3">
+    <h2 class="auth-title mb-3 text-center">Create Account</h2>
+    <p class="text-center text-muted mb-4">Signup to start shopping</p>
+
+    <form>
+      <div class="row">
+        <!-- Full Name -->
+        <div class="col-md-12 mb-3">
+          <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+          <div class="input-group">
+            <span class="input-group-text bg-white">
+              <i class="fa-regular fa-user"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Enter full name" required>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="col-md-12 mb-3">
+          <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+          <div class="input-group">
+            <span class="input-group-text bg-white">
+              <i class="fa-regular fa-envelope"></i>
+            </span>
+            <input type="email" class="form-control" placeholder="Enter email" required>
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="col-md-12 mb-3">
+          <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+          <div class="input-group">
+            <span class="input-group-text bg-white">
+              <i class="fa-solid fa-lock"></i>
+            </span>
+            <input type="password" class="form-control" placeholder="Enter password" required>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="col-md-12 mb-3">
+          <label for="phoneNo" class="form-label">Phone Number</label>
+          <div class="input-group">
+            <span class="input-group-text bg-white">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Optional">
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary w-100 py-2 fw-semibold mb-3">Create Account</button>
+
+      <div class="text-center">
+        <span class="text-muted">Already have an account?</span>
+        <a class="fw-semibold text-primary" [routerLink]="['../login']">Log In</a>
+      </div>
+    </form>
+  </div>
+</div>
