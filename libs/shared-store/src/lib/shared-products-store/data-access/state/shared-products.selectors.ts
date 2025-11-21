@@ -18,3 +18,8 @@ export const selectAllProducts = createSelector(
   selectSharedProductsState,
   (state) => state.products
 )
+
+export const selectCategorizedProducts = createSelector(
+  selectSharedProductsState,
+  (state) => state.categorizedProducts
+)

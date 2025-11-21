@@ -5,14 +5,16 @@ import * as SharedProductActions from '@angular-nx-ecom-wp/shared-store';
 import * as ProductSelectors from '@angular-nx-ecom-wp/shared-store';
 import { ProductCardComponent } from '@angular-nx-ecom-wp/shared';
 import { ProductSliderComponent } from '../product-slider/product-slider.component';
+import { RouterLinkWithHref } from "@angular/router";
 
 @Component({
   selector: 'feature-home',
   imports: [
     CommonModule,
     ProductCardComponent,
-    ProductSliderComponent
-  ],
+    ProductSliderComponent,
+    RouterLinkWithHref
+],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

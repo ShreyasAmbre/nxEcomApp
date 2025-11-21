@@ -1,5 +1,5 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, withComponentInputBinding } from '@angular/router';
 import { appRoutes } from './app.routes';
 import { provideState, provideStore } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
@@ -17,7 +17,7 @@ export const appConfig: ApplicationConfig = {
     ...provideSharedProductStore,
     provideEffects([AppEffects]),
     provideStoreDevtools({ maxAge: 25, logOnly: false }),
-    provideRouter(appRoutes),
+    provideRouter(appRoutes, withComponentInputBinding()),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideHttpClient(
       withInterceptors([

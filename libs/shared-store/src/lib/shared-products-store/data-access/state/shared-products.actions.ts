@@ -31,7 +31,7 @@ export const getProductsBasedonCategory  = createAction(
 );
 export const getProductsBasedonCategorySuccess = createAction(
   '[Products] Get Products Based on Category Success',
-  props<{ products: Product[] }>()
+  props<{ categorizedProducts: Product[] }>()
 );
 export const getProductsBasedonCategoryFailure = createAction(
   '[Products] Get Products Based on Category Failure',

@@ -7,6 +7,7 @@ export const SHARED_PRODUCT_FEATURE_KEY = 'shared-product';
 const initialSharedProductState: SharedProductState = {
   categories: [],
   products: [],
+  categorizedProducts: [],
   currentCategory: '',
   error: ''
 }
@@ -44,7 +45,7 @@ export const sharedProductReducer = createReducer(
   on(getProductsBasedonCategorySuccess, (state, action) => {
     return {
       ...state,
-      products: action.products,
+      categorizedProducts: action.categorizedProducts,
       error: ''
     }
   })

@@ -1,6 +1,7 @@
 export interface SharedProductState {
   categories: string[],
   products: Product[],
+  categorizedProducts: Product[]
   currentCategory: string,
   error: string
 }

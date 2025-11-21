@@ -37,7 +37,7 @@ export class SharedProductsEffects {
   loadProducsBasedOnCategory = createEffect(() => this.#actions.pipe(
     ofType(getProductsBasedonCategory),
     exhaustMap(({ categoryName }) => this.#sharedProductsService.getProductFromCategory(categoryName).pipe(
-      map((products: Product[]) => getProductsBasedonCategorySuccess({ products }))
+      map((categorizedProducts: Product[]) => getProductsBasedonCategorySuccess({ categorizedProducts }))
     )),
     catchError((error) => of(getProductsBasedonCategoryFailure({ error })))
   ))

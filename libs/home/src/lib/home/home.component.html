@@ -19,7 +19,7 @@
 
           <div class="row g-4">
             <div class="col-6 col-md-4 col-lg-3" *ngFor="let category of allCategories | async">
-              <div class="category-card text-center p-4 shadow-sm">
+              <div class="category-card text-center p-4 shadow-sm" [routerLink]="['../products/categorized-product', category]">
                 <div class="image-wrapper mb-3">
                   <img
                     [src]="'https://placehold.co/600x400'"
