@@ -32,7 +32,7 @@
 
 ---
 
-## 📘 Step 1 — Theory and Initial Project Setup
+## 📘 Step 1 — Theory and Initial Project Setup - Completed
 
 **Versions Used**
 - Nx: `v20`
@@ -70,7 +70,7 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 
 ---
 
-## 📗 Step 2 — Shared Library and Reusable Components
+## 📗 Step 2 — Shared Library and Reusable Components - Completed
 
 **Work Completed**
 - Created a **Shared Library** (`shared/`)  
@@ -78,13 +78,13 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 - Integrated **`shared-main-nav`** component inside the **root app component**
 
 ---
-## 📗 Step 3 — Installation of NgRx and Creating Global core lib
+## 📗 Step 3 — Installation of NgRx and Creating Global core lib - Completed
 - Installation of NgRx Store, effect, entity and devto0l v18.0.2
 - Creating core library to hold global services, interceptors, and the root NgRx store.
 - Integrated ngRx store, actions, reducer and effect in app.config.ts
 - Create Actions and Reducer to update the store
 
-## 📗 Step 4 — Creating Architecture Foundation of Application 
+## 📗 Step 4 — Creating Architecture Foundation of Application - Completed
 - Created constants/endpoints file inside core
 - Integration interceptor which concat baseUrl with endpoint in core
 - Created appService/serivces for global level logic
@@ -92,26 +92,29 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 - Added Environment folder inside angularNxEcom/src and interface of environemnt in shared/models
 - Created feature-shell library as an entry point for all the feature & added main-layout component
 
-## 📗 Step 5 — Integration of fakeStoreApi's
+## 📗 Step 5 — Integration of fakeStoreApi's - Completed
 - Added baseUrl in environment
 - created product service and integrated category API and triggered that from component
 
 
-## 📗 Step 6 — Integration of NgRx in feature shared-store
+## 📗 Step 6 — Integration of NgRx in feature shared-store - Completed
 - This feature will be having a store which will be shared across all the feature 
 - This store will only contain those data which is required to share other API calls and data will be isolted inside the feature only 
 - Integrated getCategories and getAllProducts API from fakestoreapi.com in our hsared-store
 
-## 📗 Step 7 — Added shared style for  and integrated inside apps
+## 📗 Step 7 — Added shared style for  and integrated inside apps - Completed
 - Added base.scss, variables.scss, utitlity.scss
 - Added product-card shared component so that we can use in Home & Product feature library
 - Some configuration also changes
 
-## 📗 Step 8 — Category Page 
+## 📗 Step 8 — Category Page - Completed
 - This should include filters and products listing based on category only 
 - Create action, effects, reducer, effects to get product based on categoryName
 
 ## Step 8 - Login Feature UI & API integration and store data in gloabal store
+- Create a login and signup UI
+- Create Signal Form for both
+- Integrate authguard
 - U should give a try to use withComponentInputBinding() which will help to show the user name, category name when passing data in route
 
 ## Step 9 - Product Detail Page 
