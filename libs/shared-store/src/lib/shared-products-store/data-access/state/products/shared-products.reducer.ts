@@ -1,6 +1,6 @@
 import { createReducer, on } from "@ngrx/store";
 import { categoryActionsFailure, categoryActionsSuccess, getAllProductsFailure, getAllProductsSuccess, getProductsBasedonCategorySuccess } from "./shared-products.actions";
-import { SharedProductState } from "../models";
+import { SharedProductState } from "../../models";
 
 export const SHARED_PRODUCT_FEATURE_KEY = 'shared-product';
 

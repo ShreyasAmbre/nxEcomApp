@@ -1,6 +1,6 @@
 
 <div class="row">
-  <h3>categorized-products works! - {{ categoryName() }}</h3>
+  <h3>{{ categoryName() }}</h3>
 
   @for (product of categorizedProducts | async; track $index) {
     <div class="col-3">

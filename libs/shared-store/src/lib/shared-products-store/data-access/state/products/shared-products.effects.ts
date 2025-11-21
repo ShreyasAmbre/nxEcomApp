@@ -1,10 +1,10 @@
 import { inject, Injectable } from "@angular/core";
-import { SharedProductsService } from "../services/shared-products.service";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { catchError, EMPTY, exhaustMap, map, of } from "rxjs";
 
 import { getCategory, categoryActionsSuccess, getAllProducts, getAllProductsSuccess, getProductsBasedonCategorySuccess, getProductsBasedonCategoryFailure, getProductsBasedonCategory } from './shared-products.actions'
-import { Product } from "../models";
+import { SharedProductsService } from "../../services";
+import { Product } from "../../models";
 
 
 @Injectable()

@@ -1,6 +1,6 @@
 import { createFeatureSelector, createSelector } from "@ngrx/store";
 import { SHARED_PRODUCT_FEATURE_KEY } from "./shared-products.reducer";
-import { SharedProductState } from "../models";
+import { SharedProductState } from "../../models";
 
 export const selectSharedProductsState = createFeatureSelector<SharedProductState>(SHARED_PRODUCT_FEATURE_KEY);
 
