@@ -1,9 +1,9 @@
 import { inject, Injectable } from "@angular/core";
 import { SharedProductsService } from "../services/shared-products.service";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
-import { catchError, EMPTY, exhaustMap, map } from "rxjs";
+import { catchError, EMPTY, exhaustMap, map, of } from "rxjs";
 
-import { getCategory, categoryActionsSuccess, getAllProducts, getAllProductsSuccess } from './shared-products.actions'
+import { getCategory, categoryActionsSuccess, getAllProducts, getAllProductsSuccess, getProductsBasedonCategorySuccess, getProductsBasedonCategoryFailure, getProductsBasedonCategory } from './shared-products.actions'
 import { Product } from "../models";
 
 
@@ -32,5 +32,13 @@ export class SharedProductsEffects {
       ),
       catchError(() => EMPTY)
     ))
+  ))
+
+  loadProducsBasedOnCategory = createEffect(() => this.#actions.pipe(
+    ofType(getProductsBasedonCategory),
+    exhaustMap(({ categoryName }) => this.#sharedProductsService.getProductFromCategory(categoryName).pipe(
+      map((products: Product[]) => getProductsBasedonCategorySuccess({ products }))
+    )),
+    catchError((error) => of(getProductsBasedonCategoryFailure({ error })))
   ))
 }

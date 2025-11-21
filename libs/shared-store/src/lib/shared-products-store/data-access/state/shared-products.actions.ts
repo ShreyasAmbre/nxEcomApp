@@ -25,3 +25,21 @@ export const getAllProductsFailure = createAction(
   props<{ error: string }>()
 )
 
+export const getProductsBasedonCategory  = createAction(
+  '[Products] Get Products Based on Category',
+  props<{ categoryName: string }>()
+);
+export const getProductsBasedonCategorySuccess = createAction(
+  '[Products] Get Products Based on Category Success',
+  props<{ products: Product[] }>()
+);
+export const getProductsBasedonCategoryFailure = createAction(
+  '[Products] Get Products Based on Category Failure',
+  props<{ error: string }>()
+);
+
+
+
+
+
+

@@ -31,5 +31,14 @@ export class SharedProductsService {
     )
   }
 
+  getProductFromCategory(categoryName: string): Observable<Product[]>{
+    return this.#http.get<Product[]>(`${ENDPOINTS.PRODUCTS.GET_PRODUCT_BASED_CATEGORY}/${categoryName}`).pipe(
+      catchError(error => {
+        console.log(error);
+        return EMPTY
+      })
+    )
+  }
+
 
 }
