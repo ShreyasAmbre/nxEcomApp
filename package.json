@@ -17,6 +17,7 @@
     "@fortawesome/free-regular-svg-icons": "^7.1.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@ng-bootstrap/ng-bootstrap": "^18.0.0",
+    "@ngneat/error-tailor": "^5.0.1",
     "@ngrx/effects": "^19.0.0",
     "@ngrx/store": "^19.0.0",
     "@ngrx/store-devtools": "^19.0.0",

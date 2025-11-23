@@ -33,6 +33,7 @@
 | `npm install @fortawesome/free-solid-svg-icons ` | To Install FontAwesome Solid |
 | `npm install @fortawesome/free-regular-svg-icons` | To Install FontAwesome Regular |
 | `npm install @fortawesome/free-brands-svg-icons ` | To Install FontAwesome Regular |
+| `npm i @ngneat/error-tailor ` | To Show Form Errors in a Clean Approach |
 
 ---
 
@@ -120,6 +121,10 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 
 ## Step 9 - Login Feature UI & API integration and store data in gloabal store
 - Create a login and signup UI
+- Added Reactive Form 
+- Added Country code in form 
+- Add NgxMask
+- Added Form Validation using clean approach  
 - Create Signal Form for both
 - Integrate authguard
 - U should give a try to use withComponentInputBinding() which will help to show the user name, category name when passing data in route
@@ -133,5 +138,6 @@ Use the **"de facto industry standard"** (Conventional Commits) for clean and sc
 - Need to add resolver in home page 
 - Need to add skelton loading in all pages
 - create artifact pipes to load the images
+- Install ngxtension 
 
 

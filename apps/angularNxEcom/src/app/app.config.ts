@@ -4,12 +4,13 @@ import { appRoutes } from './app.routes';
 import { provideStore } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
-import { AppEffects, AuthEffects, baseUrlInterceptor, provideCoreStore, setupFontAwesome } from '@angular-nx-ecom-wp/core';
+import { AppEffects, AuthEffects, baseUrlInterceptor, errorTailorConfig, provideCoreStore, setupFontAwesome } from '@angular-nx-ecom-wp/core';
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { APP_CONFIG, } from '@angular-nx-ecom-wp/shared';
 import { provideSharedProductStore } from '@angular-nx-ecom-wp/shared-store';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { provideErrorTailorConfig } from '@ngneat/error-tailor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -31,6 +32,7 @@ export const appConfig: ApplicationConfig = {
         baseUrlInterceptor
       ])
     ),
+    provideErrorTailorConfig(errorTailorConfig),
     { provide: APP_CONFIG, useValue: environment },
   ],
 };
